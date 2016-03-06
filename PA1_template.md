@@ -270,7 +270,7 @@ ActivityData_Corrected$date <- as.Date(ActivityData_Corrected$date)
 ActivityData_Corrected$WeekDay_OR_End <- sapply(ActivityData_Corrected$date, FUN =WeekDay_OR_end)
 averages <- aggregate(steps ~ interval + WeekDay_OR_End, data = ActivityData_Corrected, mean)
 ggplot(averages, aes(interval, steps)) + geom_line() + facet_grid(WeekDay_OR_End ~ .) + theme_bw() +
-    xlab("Iime of Day") + ylab(" Average Number of steps")
+    xlab("Time of Day") + ylab(" Average Number of steps")
 ```
 
 ![](PA1_template_files/figure-html/unnamed-chunk-16-1.png)

@@ -162,7 +162,7 @@ ActivityData_Corrected$date <- as.Date(ActivityData_Corrected$date)
 ActivityData_Corrected$WeekDay_OR_End <- sapply(ActivityData_Corrected$date, FUN =WeekDay_OR_end)
 averages <- aggregate(steps ~ interval + WeekDay_OR_End, data = ActivityData_Corrected, mean)
 ggplot(averages, aes(interval, steps)) + geom_line() + facet_grid(WeekDay_OR_End ~ .) + theme_bw() +
-    xlab("Iime of Day") + ylab(" Average Number of steps")
+    xlab("Time of Day") + ylab(" Average Number of steps")
 ```
 
 We can see at the graph above that activity on the weekday has the greatest peak from all steps intervals. But, we can see too that weekends activities has more peaks over a hundred than weekday. This could be due to the fact that activities on weekdays mostly follow a work related routine, where we find some more intensity activity in little a free time that the employ can made some sport. In the other hand, at weekend we can see better distribution of effort along the time.
