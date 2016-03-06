@@ -1,6 +1,6 @@
 ---
 title: "Reproducible Research: Peer Assessment 1"
-Date: " Mar  0, 2016"
+Date: " Mar  06, 2016"
 output: 
   html_document:
     keep_md: true
